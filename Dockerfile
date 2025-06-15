@@ -1,4 +1,3 @@
-Dockerfile
 # Receita para o n8n com as ferramentas de vídeo
 FROM n8nio/n8n:latest
 
