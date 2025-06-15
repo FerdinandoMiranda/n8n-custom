@@ -5,7 +5,7 @@ FROM n8nio/n8n:latest
 USER root
 
 # Instalar FFmpeg, Python e outras dependências direto na VPS
-RUN apk add --no-cache ffmpeg python3 py3-pip git build-base linux-headers
+RUN apk add --no-cache ffmpeg python3 py3-pip git build-base linux-headers pkgconfig
 
 # Instalar as ferramentas de Python
 RUN pip install yt-dlp faster-whisper torch --break-system-packages --extra-index-url https://download.pytorch.org/whl/cpu
